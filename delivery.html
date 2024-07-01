@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slowmeds - Delivery Information</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header class="head header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand " href="index.html">
+            <b style="color:#e56d05; font-size: larger;">Slowmeds</b>
+          </a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav font-weight-bold mx-auto py-0">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #011836;" href="index.html"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #011836;" href="shop.html"><b>Shop</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #e56d05;" href="delivery.html"><b>Delivery</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #011836;" href="track.html"><b>Track</b></a>
+                </li>
+              </ul>
+            </div class="nav-item">
+            <a href="https://wa.me/+2348105524379" target="_blank" class="btn butto">
+              <i class="fab fa-whatsapp"></i> <b>Chat on WhatsApp</b>
+            </a></div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Navbar End -->
+    
+    <!-- Header Start -->
+    <div class="container-fluid reachout-section">
+      <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 200px">
+        <h3 class="display-3 font-weight-bold">Delivery Information</h3>
+        <div class="d-inline-flex">
+          <p class="m-0"><a class="link" href="index.html">Home</a></p>
+          <p class="m-0 px-2">/</p>
+          <p class="m-0">Delivery</p>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Delivery Options Start -->
+    <div class="container my-5">
+      <h3 class="text-center mb-4"><b>Our Delivery Options</b></h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body product-card text-center">
+              <h5 class="card-title">Standard Delivery</h5>
+              <p class="card-text">Delivery within 3-5 business days. Cost: &#8358;1000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body product-card text-center">
+              <h5 class="card-title">Express Delivery</h5>
+              <p class="card-text">Delivery within 1-2 business days. Cost: &#8358;2000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body product-card text-center">
+              <h5 class="card-title">Same-Day Delivery</h5>
+              <p class="card-text">Delivery on the same day. Cost: &#8358;3000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Delivery Options End -->
+
+    <!-- Delivery Areas Start -->
+    <div class="container my-5">
+      <h3 class="text-center mb-4"><b>Delivery Areas</b></h3>
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>We deliver to the following areas:</p>
+          <ul class="list-inline">
+            <li class="list-inline-item">Lokoja</li>
+            <li class="list-inline-item">Adankolo</li>
+            <li class="list-inline-item">Ganaja</li>
+            <li class="list-inline-item">Zango</li>
+            <li class="list-inline-item">And more...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Delivery Areas End -->
+
+    <!-- Delivery Policy Start -->
+    <div class="container my-5">
+      <h3 class="text-center mb-4"><b>Delivery Policy</b></h3>
+      <p>We strive to ensure timely delivery of all orders. Please note the following policies:</p>
+      <ul>
+        <li>Orders placed before 6 PM will be processed the same day.</li>
+        <li>Delivery times are estimates and may vary due to external factors.</li>
+        <li>Free delivery on orders over &#8358;10,000.</li>
+        <li>Returns and refunds are processed as per our return policy.</li>
+      </ul>
+    </div>
+    <!-- Delivery Policy End -->
+
+    <!-- Tracking Orders Start -->
+    <div class="container my-5">
+      <h3 class="text-center mb-4"> <b>Track Your Order</b></h3>
+      <p class="text-center">Enter your order ID to track the status of your delivery:</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="d-flex" id="trackingForm">
+            <div class="input-group mb-3">
+              <input type="text" style="border: 2px solid #e56d05; border-radius: 30px;" class="form-control" placeholder="Order ID" aria-label="Order ID" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="add-to-cart-btn" type="button" id="button-addon2">Track</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Tracking Orders End -->
+
+    <!-- Contact Information Start -->
+    <div class="container my-5">
+      <h3 class="text-center mb-4"><b>Contact Us </b></h3>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5><i class="fas fa-mail"></i>Email</h5>
+          <p></i>info@slowmeds.com</p>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5><i class="fas fa-whatsapp"></i>Phone</h5>
+          <p></i>+234 123 4567</p>
+        </div>       
+        <div class="col-lg-4 mb-4">
+          <h5><i class="fas fa-instagram"></i>instagram</h5>
+          <p>Slowmeds</p>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Information End -->
+
+    <!-- FAQs Start -->
+<div class="container-fluid faq-section pt-5">
+      <div class="question-section">
+        <h3><b>Frequently Asked Questions</b></h3>
+      </div>
+      <div class="container pb-3">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <i class="fas fa-chevron-right"></i>
+            <span>What are the delivery charges?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Delivery charges vary based on the delivery option selected. Delivery around Adankolo - Lokongoma is &#8358;1000, delivery around Zone-8, Crusher, Felele is &#8358;2000, delivery far away is &#8358;3000.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <i class="fas fa-chevron-right"></i>
+            <span>What is the delivery time?</span>
+          </div>
+          <div class="faq-answer">
+            <p> Delivery time varies based on your location. Typically, it takes up to 20 - 30 mins for areas around Adankolo.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <i class="fas fa-chevron-right"></i>
+            <span>Can I change my delivery address after placing an order?</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, you can change your delivery address within 5 mins of placing the order by contacting our customer service.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <i class="fas fa-chevron-right"></i>
+            <span>How can I track my order?</span>
+          </div>
+          <div class="faq-answer">
+            <p>You can track your order using the Order ID provided in your confirmation email. Enter the Order ID in the tracking section above to get the current status of your order.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <i class="fas fa-chevron-right"></i>
+            <span>What payment methods do you accept?</span>
+          </div>
+          <div class="faq-answer">
+            <p>We accept various payment methods including credit/debit cards, bank transfers and cash on delivery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAQs End -->
+    <!-- Footer Start -->
+    <footer class="footer-section pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5>Slowmeds</h5>
+            <p>Lokoja's biggest online pharmacy providing quality medicines at affordable prices.</p>
+            <h5 class="answer2"><b>Subscribe To Our Newsletter</b></h5>
+            <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="Email address" aria-label="Email">
+              <button class="button" type="submit">Subscribe</button>
+            </form>
+          </div>
+          <!-- Links -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- Contact Info -->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <h5>Contact Us</h5>
+            <p>Email: info@slowmeds.com</p>
+            <p>Phone: +234 123 4567</p>
+            <div class="social-links">
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2024 Slowmeds. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+  // Initialize event listeners or any required functionality
+  const trackButton = document.getElementById('button-addon2');
+  trackButton.addEventListener('click', trackOrder);
+
+  function trackOrder() {
+    const orderId = document.querySelector('input[placeholder="Order ID"]').value;
+    if (orderId) {
+      alert(`Tracking order ID: ${orderId}`);
+      // Replace this alert with the actual tracking logic
+    } else {
+      alert('Please enter a valid order ID.');
+    }
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var faqAccordion = document.getElementById('faqAccordion');
+    var accordionButtons = faqAccordion.querySelectorAll('.btn-link');
+
+    accordionButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        var isExpanded = this.getAttribute('aria-expanded') === 'true';
+        accordionButtons.forEach(function(btn) {
+          btn.setAttribute('aria-expanded', 'false');
+          btn.classList.add('collapsed');
+        });
+        if (!isExpanded) {
+          this.setAttribute('aria-expanded', 'true');
+          this.classList.remove('collapsed');
+        }
+      });
+    });
+  });
+
+    </script>
+  </body>
+</html>

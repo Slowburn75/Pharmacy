@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slowmeds</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header class="head header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand " href="index.html">
+            <b style="color:#e56d05; font-size: larger;">Slowmeds</b>
+          </a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav font-weight-bold mx-auto py-0">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #011836;" href="index.html"><b>Home</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #e56d05;" href="shop.html"><b>Shop</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #011836;" href="delivery.html"><b>Delivery</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #011836;" href="track.html"><b>Track</b></a>
+                </li>
+              </ul>
+            </div class="nav-item">
+            <a href="https://wa.me/+2348105524379" target="_blank" class="btn butto">
+              <i class="fab fa-whatsapp"></i> <b>Chat on WhatsApp</b>
+            </a></div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid shop-header">
+      <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 200px">
+        <h3 class="display-3 font-weight-bold">Shop</h3>
+        <div class="d-inline-flex">
+          <p class="m-0"><a class="link" href="index.html">Home</a></p>
+          <p class="m-0 px-2">/</p>
+          <p class="m-0">Shop</p>
+        </div><br>
+        <div class="row">
+            <form class="d-flex col-lg-10 col-md-8 col-sm-6">
+              <input class="form-control me-2" id="searchInput" type="text" placeholder="Search Product..." >
+              <button class="button" onclick="searchProducts()" type="submit">Search</button>
+            </form>
+            <div class="cart-icon col-lg-2 col-md-4 col-sm-6" onclick="toggleCart()">
+              <i class="fas fa-shopping-cart fa-2x carrt" alt="Cart"></i>
+              <span id="cartCounter">0</span>
+            </div>        
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+    <br>
+
+    <!-- Filter Start -->
+    <div class="container-fluid filter">
+      <button id="filterToggleBtn" class="buton" onclick="toggleFilters()"><i class="fas fa-filter"></i></button>
+      <aside id="filterOptions" class="filter-options" style="display: none;">
+        <h5>Filter by category</h5>
+        <div class="filter">
+          <input type="checkbox" onclick="filterProducts()" id="category1">
+          <label for="category1">Malaria Drugs</label><br>
+          <input type="checkbox" onclick="filterProducts()" id="category2">
+          <label for="category2">Typhoid Drugs</label><br>
+          <input type="checkbox" onclick="filterProducts()" id="category3">
+          <label for="category3">Antibiotic</label><br>
+          <input type="checkbox" onclick="filterProducts()" id="category4">
+          <label for="category4">Contraceptives</label><br>
+          <input type="checkbox" onclick="filterProducts()" id="category5">
+          <label for="category5">Well man/woman</label><br>
+          <input type="checkbox" onclick="filterProducts()" id="category6">
+          <label for="category6">Antacids</label><br>
+        </div>
+      </aside>
+    </div>
+    <!-- Filter End -->
+
+    <!-- Product Start -->
+    <section class="products" id="products">
+      <div class="container-fluid featured-products-section pt-5 pb-5">
+        <div class="text-center mb-4">
+          <h2>Featured Products</h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category1">
+                <img src="img/act.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Act-Clatem</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Act-Clatem', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category3">
+                <img src="img/amoxilin.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Amoxilin</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Amoxilin', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category2">
+                <img src="img/cipro2.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Ciproflocacin</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Ciproflocacin', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category6">
+                <img src="img/medifirst1.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Med-First plus</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Med-First plus', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category1">
+                <img src="img/amaterm2.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Amaterm Forte</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Amaterm Forte', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category6">
+                <img src="img/gaviscon.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Gaviscon</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Gaviscon', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category3">
+                <img src="img/amoxilin.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Amoxilin</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Amoxilin', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category6">
+                <img src="img/goosense.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Goosense</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Goosense', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category1">
+                <img src="img/p alaxin.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">P-Alaxin</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('P-Alaxin', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category1">
+                <img src="img/lonart.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Lonart</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Lonart', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category1">
+                <img src="img/arthemeter.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Arthemeter</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Arthemeter', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category1">
+                <img src="img/Artesunate.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Artesunate</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Artesunate', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category1">
+                <img src="img/Liram.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Liram</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Liram', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category3">
+                <img src="img/antibiotic.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Antibiotic</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Antibiotic', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category6">
+                <img src="img/medifirst.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Med-First</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Med-First', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category2">
+                <img src="img/cipro.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Ciprotab</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Ciprotab', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category1">
+                <img src="img/amaterm.jpeg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Amaterm softgel</h5>
+                  <p class="card-text">&#8358;2000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Amaterm softgel', 2000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category5">
+                <img src="img/wellwoman.jpeg" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                  <h5 class="card-title">Well Woman</h5>
+                  <p class="card-text">&#8358;4000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Well Womanan', 4000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card product-card h-100" data-category="category5">
+                <img src="img/wellman.jpeg" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                  <h5 class="card-title">Well Man</h5>
+                  <p class="card-text">&#8358;8000</p>
+                    <div class="buttons">
+                      <button class="buton add-to-cart-btn" onclick="addToCart('Well Man', 8000)">
+                        <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                      </button>
+                    </div>
+              </div>
+            </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-lg-3 col-md-6 mb-4" data-category="category4">
+              <div class="card product-card h-100">
+                <img src="img/condoms.jpeg" class="card-img-top" alt="Product 4">
+                <div class="card-body">
+                  <h5 class="card-title">Condoms</h5>
+                  <p class="card-text">&#8358;2000</p>
+                  <div class="buttons">
+                    <button class="buton add-to-cart-btn" onclick="addToCart('Condoms', 2000)">
+                      <i class="fas fa-shopping-cart fa-1x cart" alt="Cart"></i>
+                    </button>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product End -->
+
+    <!-- Cart Modal Start -->
+    <div id="cartModal" class="cart-modal">
+      <div class="cart-modal-content">
+        <span class="close" onclick="toggleCart()">&times;</span>
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <p id="cartTotal">&#8358;</p>
+        <button class="button" onclick="buyNow('Total')">Check out</button>
+      </div>
+    </div>
+    <!-- Cart Modal End -->
+
+    <!-- Footer Start -->
+    <footer class="footer-section pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5>Slowmeds</h5>
+            <p>Lokoja's biggest online pharmacy providing quality medicines at affordable prices.</p>
+            <h5 class="answer2"><b>Subscribe To Our Newsletter</b></h5>
+            <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="Email address" aria-label="Search">
+              <button class="button" type="submit">Subscribe</button>
+            </form>
+          </div>
+          <!-- Links -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Contact Info -->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <h5>Contact Us</h5>
+            <p>Email: info@slowmeds.com</p>
+            <p>Phone: +234 123 4567</p>
+            <div class="social-links">
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="btn btn-outline-primary btn-sm"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p>&copy; 2024 Slowmeds. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      // Initialize cart array
+      let cart = [];
+      let cartCounter = 0;
+
+      // Function to add a product to the cart
+      function addToCart(product, price) {
+        cart.push({ product, price });
+        cartCounter++; // Increment the cart counter
+        document.getElementById('cartCounter').textContent = cartCounter; // Update the cart counter display
+        alert(product + ' added to cart!'); // Show an alert to the user
+      }
+
+      // Function to handle the "Buy Now" button click
+      function buyNow(product) {
+        alert('Buying ' + product); // Show an alert to the user
+      }
+
+      // Function to toggle the display of the cart modal
+      function toggleCart() {
+        const cartModal = document.getElementById('cartModal');
+        if (cartModal.style.display === 'block') {
+          cartModal.style.display = 'none';
+        } else {
+          cartModal.style.display = 'block';
+          displayCartItems();
+        }
+      }
+
+      // Function to display cart items
+      function displayCartItems() {
+        const cartItems = document.getElementById('cartItems');
+        cartItems.innerHTML = ''; // Clear existing items
+        let total = 0;
+
+        cart.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = item.product + ' - ' + item.price;
+          cartItems.appendChild(li);
+          total += item.price;
+        });
+
+        document.getElementById('cartTotal').textContent = 'Total: ' + total;
+      }
+
+      // Function to toggle the display of filter options
+      function toggleFilters() {
+        const filterOptions = document.getElementById('filterOptions'); // Get the filter options element
+        if (filterOptions.style.display === 'none') {
+          filterOptions.style.display = 'block'; // Show the filter options if hidden
+        } else {
+          filterOptions.style.display = 'none'; // Hide the filter options if visible
+        }
+      }
+
+      // Function to filter products based on selected categories
+      function filterProducts() {
+        const category1 = document.getElementById('category1').checked; // Check if category 1 is selected
+        const category2 = document.getElementById('category2').checked; // Check if category 2 is selected
+        const category3 = document.getElementById('category3').checked; // Check if category 2 is selected
+        const category4 = document.getElementById('category4').checked; // Check if category 2 is selected
+        const category5 = document.getElementById('category5').checked; // Check if category 2 is selected
+        const category6 = document.getElementById('category6').checked; // Check if category 2 is selected
+        const products = document.querySelectorAll('.product-card'); // Get all product cards
+
+        products.forEach(product => {
+          const productCategory = product.getAttribute('data-category'); // Get the category of the product
+          // Show or hide the product based on the selected categories
+          if ((category1 && productCategory === 'category1') || (category2 && productCategory === 'category2')|| (category3 && productCategory === 'category3')|| (category4 && productCategory === 'category4')|| (category5 && productCategory === 'category5')|| (category6 && productCategory === 'category6') || (!category1 && !category2 && !category3 && !category4 && !category5 && !category6)) {
+            product.style.display = 'block'; // Show the product
+          } else {
+            product.style.display = 'none'; // Hide the product
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
