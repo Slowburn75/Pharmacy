@@ -23,7 +23,7 @@
             <div class="navbar-nav font-weight-bold mx-auto py-0">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" style="color: #011836;" href="index.html"><b>Home</b></a>
+                  <a class="nav-link" style="color: #011836;" href="homepage.html"><b>Home</b></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" style="color: #011836;" href="shop.html"><b>Shop</b></a>
@@ -31,9 +31,9 @@
                 <li class="nav-item">
                   <a class="nav-link" style="color: #e56d05;" href="delivery.html"><b>Delivery</b></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link" style="color: #011836;" href="track.html"><b>Track</b></a>
-                </li>
+                </li> -->
               </ul>
             </div class="nav-item">
             <a href="https://wa.me/+2348105524379" target="_blank" class="btn butto">
@@ -51,7 +51,7 @@
       <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 200px">
         <h3 class="display-3 font-weight-bold">Delivery Information</h3>
         <div class="d-inline-flex">
-          <p class="m-0"><a class="link" href="index.html">Home</a></p>
+          <p class="m-0"><a class="link" href="homepage.html">Home</a></p>
           <p class="m-0 px-2">/</p>
           <p class="m-0">Delivery</p>
         </div>
@@ -272,7 +272,7 @@
   function trackOrder() {
     const orderId = document.querySelector('input[placeholder="Order ID"]').value;
     if (orderId) {
-      alert(`Tracking order ID: ${orderId}`);
+      alert(` ${orderId} is on he way`);
       // Replace this alert with the actual tracking logic
     } else {
       alert('Please enter a valid order ID.');
